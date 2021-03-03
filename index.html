@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Sistemo l'header all'interno di un div in  modo da ricoprire le parti laterali altrimenti lasciate bianche, creo la classica nav e do float left al logo e la prima UL. right alla seconda-->
+<div class="header-full-width">
+    <header>
+        <nav class="">
+            <img src="img/logo.svg" alt="logo fluentify" class="float-l">
+            <ul class="float-l">
+                <li><a href="">IL METODO</a></li>
+                <li><a href="">LA TECNOLOGIA</a></li>
+                <li><a href="">REAL-LIFE ENGLISH</a></li>
+                <li><a href="">SOLUZIONI AZIENDALI</a></li>
+            </ul>
+
+            <ul class="float-r">
+                <li><a href="">DIVENTA UN TUTOR</a></li>
+                <li><button class="btn-1"><a href="">LOGIN</a></button></li>
+                <li><button class="btn-2"><a href="">STRUTTURA UN PIANO</a></button></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<!--tengo l'hero-image fuori dal body ond'evitare di wrapparlo, stessa cosa per il pezzo grigio sotto. Da notare, il testo all'interno del pezzo grigio è stato rimesso all'interno del body per far si che anche un testo lungo non possa andare oltre il wrap-->
+
+<div class="jumbotron">
+    <img src="img/background-header.png" alt="businessmen speaking english" class="hero-img">   
+</div>
+    <main>
+        <div class="on-hero">
+            <h1>Scegli l'inglese studiato<br>per i professionisti</h1>
+            <button class="btn-2"><a href="">STRUTTURA UN PIANO</a></button>
+        </div>
+    </main>
+
+    <div class="gray-row">
+        <body>
+            
+        
+            <div class="gray-row-text"> 
+                <h2>Le scuole di lingua tradizionali non sono efficaci</h2>
+                <p>Solo un corso incentrato sulla fluency può portare ad una soluzione definitiva concreta.</p>
+            </div>
+        </body>
+    </div>
+
+    <!-- creo una sezione a 3 colonne equidistanti. per posizionare le immagini ho usato position absolute e un div "contenitore" vuoto, a cui ho semplicemente impostato un altezza-->
+    <main>
+        <div class="bullet-wrapper">
+            <div class="bullet-row">
+                <div class="col-bullet">
+                    <div class="mt-height"></div>
+                    <img src="img/profile.svg" alt="">
+                    <h2>Piano formativo configurato sul proprio livello</h2>
+                    <hr>
+                    <p>Un metodo improntato sullo speaking con percorsi basati esattamente sulle esigenze personali dei partecipanti. Tutto parte da un accurato test di partenza per definire il<br>livello e impostare gli obiettivi da<br>raggiungere.</p>
+                </div>
+            
+
+                <div class="col-bullet middle">
+                    <div class="mt-height"></div>
+                    <img src="img/computer.svg" alt="">
+                    <h2>Affiancamento costante del tutor</h2>
+                    <hr>
+                    <p>Scegli il syllabus, la guida per il tuo<br>percorso. scegli gli argomenti per passare<br>al livello successivo e affrontali con i tutor<br>nelle sezioni one-to-one.</p>
+                </div>
+
+                <div class="col-bullet">
+                    <div class="mt-height"></div>
+                    <img src="img/doc.svg" alt="">
+                    <h2>Monitora i tuoi progressi costantemente</h2>
+                    <hr>
+                    <p>Controlla i tuoi progressi con i dati elaborati<br>dal nostro sistema. Hai il pieno controllo su<br>miglioramenti e obiettivi raggiunti.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <hr>
+
+    <!-- sezione a due colonne con ulteriore distanza dal wrapper di body -->
+        <div class="placement-row">
+            <div class="half-col">
+                <img src="img/mountain.svg" alt="">
+            </div>
+
+            <div class="half-col">
+                <h2>Scopri il tuo livello iniziale e struttura un piano personalizzato</h2>
+                <p>L'esperienza Fluentify parte sempre da un test di placement per avere una chiara visione del tuo inglese, ad oggi.</p>
+                <a href=""  class="link">Scopri il nostro test di placement</a>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- footer con due colonne, nulla di particolare salvo il bottone post footer con position fixed che resta ferno nonostante lo scroll-->
+        <div class="gray-row">
+            <footer>
+                <div class="footer-col">
+                    <h2 class="float-l clearfix">Struttura un piano</h2>
+                </div>
+                <div class="footer-col">
+                    <p class="float-r clearfix">
+                        Sono 
+                        <select name="levels" id="levels"><option value="Seleziona">Seleziona</option></select>
+                        <button class="btn-2 btn-footer"><a href="">VISUALIZZA IL TUO PIANO</a></button>
+                    </p>
+                    
+                </div>
+            </footer>
+        </div>
+    
+
+        <button class="fixed btn-2"><a href="">HELP</a></button>
+</body>
+</html>
