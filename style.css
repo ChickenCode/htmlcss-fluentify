@@ -80,12 +80,19 @@ a {
 .jumbotron {
     position: relative;
     margin-bottom: -4px;
+    overflow: hidden;
+    background-color: #0c325a;
+}
+
+.jumbotron img{
+    transform: translate(30%);
+    width: 80vw;
 }
 
 
 .on-hero{
     position: absolute;
-    top: 35%;
+    top: 30%;
 }
 
 .on-hero h1 {
