@@ -6,7 +6,7 @@
 }
 
 header, main, footer{
-    max-width: 1440px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -37,6 +37,12 @@ header {
     height: 100px;
 }
 
+nav div {
+    font-size: smaller;
+    display: inline-block;
+}
+
+
 ul {
     list-style: none;
     display: inline-block;
@@ -44,17 +50,15 @@ ul {
 
 li {
     display: inline-block;
-    line-height: 3;
-    padding: 0 10px;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 0 2px;
 }
 
 nav img{
-    padding: 20px 10px;
+    padding: 25px;
 }
 
-ul {
-    padding: 20px 40px;
-}
 
 a {
     text-decoration: none;
@@ -67,6 +71,7 @@ a {
     border-radius: 5px;
     padding: 5px 15px;
     font-weight: 500;
+    font-size: smaller;
 }
 
 .btn-2 {
@@ -118,37 +123,39 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 2;
+    
 }
 
 .gray-row-text p {
     color: gray;
+    margin: 5px;
 }
 
+.gray-row-text h2 {
+    margin: 5px;
+}
 
 .bullet-wrapper img {
     height: 100px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 30px 0 20px;
+}
+
+.bullet-row {
+ margin-bottom: 35px;
 }
 
 .col-bullet {
-    display: inline-block;
-    width: 28%;
+    display:block;
+    width: 33.33%;
     position: relative;
-    vertical-align: top;
     text-align: center;
 }
 
 .middle {
-    margin: 0% 7.69%;
+    margin: auto;
 }
 
-.mt-height {
-    height: 150px;
-}
+
 
 .col-bullet h2 {
     color: #7ebb0d;
@@ -173,19 +180,16 @@ hr {
 }
 
 .placement-row {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
-.half-col img {
-    height: 350px;
-}
 
 .half-col{
     display: inline-block;
-    max-width: 350px;
     vertical-align: top;
-    margin: 0 10%;
+    width: 50%;
+    padding: 20px 5%;
 }
 
 .half-col h2 {
@@ -199,6 +203,7 @@ hr {
     font-weight: 500;
 }
 
+
 .link {
     color: blue;
     display: inline-block;
@@ -206,20 +211,17 @@ hr {
     text-decoration: underline;
 }
 
-.footer-col {
-    display: inline-block;
-    width: 49.84%;
-    height: 100%;
+footer div {
+    line-height: 120px;
 }
 
 
-.footer-col p {
+footer p {
     color: gray;
-    display: inline-block;
 }
 
 .btn-footer {
-    padding: 20px 10px ;
+    padding: 15px 10px ;
 }
 
 footer select {
@@ -227,12 +229,6 @@ footer select {
     background-color: #d3d3d3;
     width: 12em;
     font-size: 1.2em;
-    margin: 60px;
-}
-
-footer h2 {
-    display: block;
-    height: 82px;
 }
 
 .fixed {
@@ -240,7 +236,7 @@ footer h2 {
     bottom: 0;
     right: 20%;
     border-radius: 5px 5px 0px 0px;
-    padding: 10px;
+   
     
 }
 
