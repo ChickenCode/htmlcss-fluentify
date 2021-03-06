@@ -33,10 +33,6 @@ header, main, footer{
     background-color: #0c325a;
 }
 
-header {
-    height: 100px;
-}
-
 nav div {
     font-size: smaller;
     display: inline-block;
